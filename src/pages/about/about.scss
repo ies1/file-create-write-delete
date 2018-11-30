@@ -4,4 +4,15 @@ page-about {
         background-image: linear-gradient(blue, aqua);
         color: white;
       }    
+
+    .myList {
+        background-color:rgba(181,181,181,0.6);
+    }
+
+    .innerList {
+        margin-top: 12px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 80%;
+    }
 }

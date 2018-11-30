@@ -13,11 +13,12 @@
       <button ion-button full large (click)="deleteFile()">reove file</button>
 
       <h1>File Navigation</h1>
-      <button ion-button full large (click)="goUp()">
+      <div class="myList">
+      <button class="innerList" ion-button full large (click)="goUp()">
         Go up
       </button>
     
-      <ion-list *ngFor="let item of items">
+      <ion-list class="innerList" *ngFor="let item of items">
     
         <ion-list-header *ngIf="item.isDirectory" (click)="goDown(item)">
           Directory: {{item.name}}
@@ -28,4 +29,5 @@
         </ion-item>
     
       </ion-list>
+    </div>
 </ion-content>
