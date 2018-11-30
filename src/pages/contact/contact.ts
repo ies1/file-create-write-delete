@@ -11,9 +11,4 @@ export class ContactPage {
 
   }
 
-  // swipe(event) {
-  //   if(event.direction === 4) {
-  //     this.navCtrl.parent.select(1);
-  //   }
-  // }
 }

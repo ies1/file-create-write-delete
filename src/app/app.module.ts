@@ -16,6 +16,7 @@ import { MidataService } from '../services/midataService';
 import { SecureStorage } from '@ionic-native/secure-storage';
 import { InAppBrowser } from "@ionic-native/in-app-browser";
 import { Network } from '@ionic-native/network';
+import { File } from '@ionic-native/file';
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import { Network } from '@ionic-native/network';
     SecureStorage,
     InAppBrowser,
     Network,
+    File,
     MidataService
   ]
 })

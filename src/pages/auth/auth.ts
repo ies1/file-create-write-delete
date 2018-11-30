@@ -29,11 +29,11 @@ export class AuthPage {
   }
 
   ionViewDidEnter(){
-    this._tabBarElement = document.querySelector('.tabbar.show-tabbar');
-    this._tabBarElement.style.display = 'none';
+    //this._tabBarElement = document.querySelector('.tabbar.show-tabbar');
+    //this._tabBarElement.style.display = 'none';
   }
 
   ionViewWillLeave(){
-    this._tabBarElement.style.display = 'flex';
+    //this._tabBarElement.style.display = 'flex';
   }
 }

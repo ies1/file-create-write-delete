@@ -8,5 +8,24 @@
 
 <ion-content padding>
       <p>ABOUT</p>
+      <button ion-button full large (click)="createAndWriteFile()">create and write</button>
+      <button ion-button full large (click)="appendToFile()">override file content</button>
+      <button ion-button full large (click)="deleteFile()">reove file</button>
 
+      <h1>File Navigation</h1>
+      <button ion-button full large (click)="goUp()">
+        Go up
+      </button>
+    
+      <ion-list *ngFor="let item of items">
+    
+        <ion-list-header *ngIf="item.isDirectory" (click)="goDown(item)">
+          Directory: {{item.name}}
+        </ion-list-header>
+    
+        <ion-item *ngIf="item.isFile">
+          File: {{item.name}}
+        </ion-item>
+    
+      </ion-list>
 </ion-content>
